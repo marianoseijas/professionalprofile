@@ -50,9 +50,16 @@ footer{
 .custom-container-splash{
   color: white;
   position: relative;
-  height: 70%;
+  height: 85%;
   z-index: 1;
 }
+
+@media only screen (max-width: 992px){
+  .custom-container-splash{
+    height: 60%;
+  }
+}
+
 
 .custom-container-about{
   width: 100%;
