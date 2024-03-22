@@ -56,7 +56,7 @@ footer{
 
 @media only screen (max-width: 992px){
   .custom-container-splash{
-    height: 60%;
+    height: 100%;
   }
 }
 
