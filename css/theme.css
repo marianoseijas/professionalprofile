@@ -399,6 +399,18 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 1;
 }
 
+.arrow-control{
+  width: 100%;
+  max-width: 40px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px){
+  .arrow-control{
+    width: 100%;
+    max-width: 20px;
+  }
+}
+
 .img-fluid{
   -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
   -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
