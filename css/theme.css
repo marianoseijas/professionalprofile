@@ -1,154 +1,416 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@font-face {
+  font-family: 'GeminiClusterRegular';
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local("Gemini Cluster.otf"),
+    url("../fonts/GeminiClusterRegular.ttf") format("truetype");
 
 }
 
-*{background-color: none!important;}
+@font-face {
+  font-family: 'NotoSansDisplayRegular';
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local("NotoSansDisplayRegular.ttf"),
+    url("../fonts/NotoSansDisplayRegular.ttf") format("truetype");
 
-/*fluid typography*/
-html {
-  font-size: 12px;
-}
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
 }
 
-/*global style*/
-body {
-  width: 100wh;
-  height: 90vh;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
-  font-family: 'Open Sans'!important, sans-serif!important;
+@font-face {
+  font-family: 'NotoSansDisplay';
+  font-style: normal;
+  font-weight: 100,200,300,400,500,600,700,800;
+  src:
+    local("NotoSansDisplay.ttf"),
+    url("../fonts/NotoSansDisplay.ttf") format("truetype");
+
 }
 
-/*animated background*/
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-/*dynamic background
-body::before {
-  content: ' ';
-  display: block;
-  background-image: url("../img/bg.jpg")!important;
-  background-position: center;
-  background-size: cover;
+/*centered body*/
+header{
+  width: 100%;
+  box-sizing:border-box;
+  /* Set the height of the header to 100% of the viewport height */
   height: 100vh;
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  z-index: -10; // This is pretty important
+}
+
+main{
+  box-sizing:border-box;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+footer{
+  font-family: 'GeminiClusterRegular' !important;
+  width: 100%;
+  height: 150px;
+}
+
+.custom-container-splash{
+  color: white;
+  position: relative;
+  height: 85%;
+  z-index: 1;
+}
+
+.custom-container-about{
+  width: 100%;
+  padding:50px;
+  z-index: 2;
+}
+
+.custom-container-about{
+  width: 100%;
+  padding:50px;
+  z-index: 2;
+}
+
+.custom-container-software{
+  width: 100%;
+  z-index: 2;
+}
+
+.custom-container-portfolio{
+  width: 100%;
+  padding:50px;
+  z-index: 2;
+}
+
+.custom-container-banner{
+  width: 100%;
+  z-index: 2;
+}
+
+.container-purple{
+  position: relative;
+  z-index: 1;
+}
+
+.container-purple::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../img/orion_bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.container-purple::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(60, 0, 60, 0.85);
+  z-index: -1;
 }
 
 
-.layer {
-  background-color: rgba(0, 0, 0, 0.6)!important;
+.container-grey{
+  position: relative;
+  z-index: 1;
+}
+
+.container-grey::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../img/orion_bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.container-grey::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+
+.container-banner{
+  position: relative;
+  z-index: 1;
+}
+
+.container-banner::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../img/orion_bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.container-banner::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.carousel-control-prev-icon{
+  background-image: none!important;
+}
+
+.carousel-control-next-icon{
+  background-image: none!important;
+}
+
+
+.cover{
+  z-index: 1!important;
+}
+
+.cover:after {
+  background-image: linear-gradient(20deg, #00FFFF, #FF00FF );
+  content: '';
+  display: block;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2!important;
+  opacity: 0.55;
 }
-*/
 
-/*centered*/
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+.banner-middle{
+  width: 100%;
+}
+
+ .banner{
+   width: 100%;
+   padding: 50px;
+   /* Set the height of the header to 100% of the viewport height */
+   height: 500px;
+   z-index: 1!important;
+ }
+
+ .banner:after {
+   background-image: linear-gradient(20deg, #FF00FF, #00FFFF);
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   opacity: 0.55;
+ }
+
+ .card-service{
+   width: 100%;
+   padding: 20px;
+   background: rgba(0, 0, 0, 0.5);
+   border: 1px;
+ }
+
+
+nav{
+  font-family: 'GeminiClusterRegular' !important;
+  width: 100%!important;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top:20px!important;
+  z-index: 2;
+}
+
+.navbar-nav{
+  position:absolute;
+}
+
+.navbar-toggler{
+  font-size: 2em!important;
+  border: 0px!important;
+}
+
+.full-width {
+  width: 100%!important;
+  max-width: 1920px!important;
+}
+
+.fw-prices {
+  width: 100%!important;
+  background-color: grey;
+  max-width: 1920px!important;
+}
+
+html,body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*custom css*/
-img{
+
+.splash {
+  width: 500px;
+  max-width: 500px;
+}
+
+.logo-footer {
   width: 100%;
-  max-width: 170px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255,0.3)!important;
-  border-radius: 50%;
+  max-width: 150px;
+}
+
+.iso {
+  width: 250px;
+  max-width: 250px;
+}
+
+
+.photo {
+  width: 100%!important;
+  max-width: 400px;
+}
+
+.photo:hover {
+    content: url('../img/photo-color.png');
+    width: 100%;;
+    max-width: 400px;
+}
+
+.logo-brand {
+  width: 200px;
+  max-width: 200px;
+}
+
+p {
+  font-family: 'NotoSansDisplayRegular'!important;
+}
+
+.notsnansdisplay{
+    font-family: 'NotoSansDisplayRegular'!important;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  display: block;
-	font-weight: 300 !important;
+  font-family: 'NotoSansDisplay'!important;
 }
 
-.mobile{
-    display: none;
+.title{
+  font-family: 'GeminiClusterRegular' !important;
 }
 
-ul li {
+.doble-shadow{
+  text-shadow: -3px 3px 0 #00FFFF, -5px 5px 0 #ff2044b5, -7px 7px 0 #FF00FF;
+}
+
+.icons {
   display: inline;
   list-style-type: none;
-  padding: 0.5rem;
 }
 
-.profiles {
+.portfolio-icons{
+  width: 100%;
+  max-width: 70px;
+}
+
+.services-icons{
+  width: 100%;
+  max-width: 170px;
+}
+
+
+.groups {
   display: block!important;
   list-style-type: none!important;
 }
 
 .fab{
-  font-size: 1.8em!important;
+  font-size: 2em!important;
 }
 
 .fas{
-  font-size: 1.8em!important;
+  font-size: 2em!important;
 }
 
-/* viewport mobile */
-@media screen and (max-width: 800px) {
-  h1 {
-    display: none;
-  }
+.arrow{
+  width: 70px;
+  max-width: 70px;
+  position: relative;
+  z-index: 1;
+}
 
-  .mobile {
-    display: block;
-  }
+.img-fluid{
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+}
+
+iframe{
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+}
+
+.p-middle {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.scrollup{
+width: 100%;
+max-width: 50px;
+position: fixed;
+bottom: 90px;
+right: 20px;
+opacity: 70%;
+z-index: 3;
+}
+
+.scrollup:hover{
+width: 100%;
+max-width: 50px;
+position: fixed;
+bottom: 90px;
+right: 20px;
+opacity: 100%;
+z-index: 3;
+}
+
+.whatsapp{
+width: 100%;
+max-width: 50px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 3;
+}
