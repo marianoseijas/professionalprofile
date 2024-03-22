@@ -25,7 +25,15 @@
   <script src="https://kit.fontawesome.com/f398c5967b.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        function appHeight() {
+        const doc = document.documentElement
+        doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+      }
 
+      window.addEventListener('resize', appHeight);
+      appHeight();
+      </script>
 </head>
 <!-- START -->
 <body>
@@ -35,7 +43,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div class="container">
-    <header>
+    <header class="module">
       <div class="cover">
         <nav class="navbar navbar-expand-lg navbar-dark pt-5">
           <div class="container">
@@ -70,7 +78,6 @@
           <div class="col-12 text-center">
             <a class="d-none d-lg-block d-xl-block" href="#"><img alt="mariano seijas logo" title="mariano seijas logo" class="splash mb-3" src="img/logo.svg"></a>
             <a class="d-block d-sm-block d-md-block d-lg-none" href="#"><img alt="mariano seijas logo" title="mariano seijas logo" class="iso" src="img/iso.svg"></a>
-            <h3 class="display-6 mt-3 fw-light eslogan-landscape">Estudio Creativo</h3>
           </div>
           <div class="col-12 text-center">
             <h3 class="display-6 mt-3 fw-light eslogan">Estudio Creativo</h3>

@@ -33,13 +33,11 @@ header{
   width: 100%;
   box-sizing:border-box;
   /* Set the height of the header to 100% of the viewport height */
-  height: 100vh;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 992px){
-  header{
-    min-height: -webkit-fill-available;
-  }
+.module {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 main{
@@ -273,9 +271,6 @@ nav{
   }
   .eslogan{
     display: none;
-  }
-  .eslogan-landscape{
-    display: block;
   }
 }
 
