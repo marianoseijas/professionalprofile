@@ -36,6 +36,12 @@ header{
   height: 100vh;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 992px){
+  header{
+    min-height: -webkit-fill-available;
+  }
+}
+
 main{
   box-sizing:border-box;
   background: rgba(0, 0, 0, 0.7);
@@ -200,6 +206,7 @@ footer{
   left: 0;
   opacity: 0.55;
 }
+
 
 .banner-middle{
   width: 100%;
