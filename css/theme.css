@@ -208,6 +208,10 @@ footer{
 
 .banner-middle{
   width: 100%;
+  /* Set the height of the header to 100% of the viewport height
+  width: calc(100vw - 20px);
+  margin-left: calc(-50vw + 50% + 10px);
+  */
 }
 
  .banner{
@@ -271,6 +275,10 @@ nav{
   }
   .eslogan{
     display: none;
+  }
+  .module {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 
