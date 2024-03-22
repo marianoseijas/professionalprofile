@@ -338,6 +338,11 @@ html,body {
     max-width: 400px;
 }
 
+.mockup{
+  width: 100%;
+  max-width: 600px;
+}
+
 .logo-brand {
   width: 200px;
   max-width: 200px;
