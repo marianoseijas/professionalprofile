@@ -50,30 +50,31 @@ footer{
 .custom-container-splash{
   color: white;
   position: relative;
-  height: 85%;
+  height: 80%;
   z-index: 1;
-}
-
-@media only screen (max-width: 992px){
-  .custom-container-splash{
-    height: 60%;
-  }
 }
 
 
 .custom-container-about{
   width: 100%;
+  padding:50px;
   z-index: 2;
 }
 
 .custom-container-software{
   width: 100%;
+  padding:50px;
   z-index: 2;
 }
 
 .custom-container-portfolio{
   width: 100%;
   padding:50px;
+  z-index: 2;
+}
+
+.custom-container-services{
+  width: 100%;
   z-index: 2;
 }
 
@@ -241,7 +242,7 @@ nav{
   z-index: 2;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1280px){
+@media only screen and (min-width: 0px) and (max-width: 992px){
   .navbar-nav{
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
