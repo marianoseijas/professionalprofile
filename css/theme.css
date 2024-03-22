@@ -256,6 +256,22 @@ nav{
   }
 }
 
+.eslogan-landscape{
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .iso {
+    display:none;
+  }
+  .eslogan{
+    display: none;
+  }
+  .eslogan-landscape{
+    display: block;
+  }
+}
+
 .navbar-toggler{
   font-size: 2em!important;
   border: 0px!important;
