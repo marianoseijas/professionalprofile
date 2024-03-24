@@ -25,8 +25,8 @@
   src:
     local("NotoSansDisplay.ttf"),
     url("../fonts/NotoSansDisplay.ttf") format("truetype");
-
 }
+
 body {
     overflow-x: hidden;
     width: 100%;
@@ -409,6 +409,25 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 70px;
   position: relative;
   z-index: 1;
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+  img { width: 100%; height: auto; }
+}
+
+.arrow:hover{
+  opacity: 0.5;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 .arrow-control{
